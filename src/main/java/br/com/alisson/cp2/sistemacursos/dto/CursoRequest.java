@@ -1,8 +1,10 @@
 package br.com.alisson.cp2.sistemacursos.dto;
 
-import br.com.alisson.cp2.sistemacursos.model.Modulo;
 
-import java.util.List;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
 
-public record CursoRequest (String titulo, String descricao, List<Modulo> modulos) {
+
+public record CursoRequest (@NotNull @NotBlank(message = "Titulo é obrigatório!") @Size(max = 150) String titulo, String descricao) {
 }
