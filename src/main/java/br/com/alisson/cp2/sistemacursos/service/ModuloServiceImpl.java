@@ -43,4 +43,14 @@ public class ModuloServiceImpl implements ModuloService {
         return ModuloMapper.toResponse(moduloSalvo);
     }
 
+    @Override
+    public ModuloResponse buscarModuloPorId(Long id) {
+        Optional <Modulo> moduloOptional = repository.findById(id);
+        if (moduloOptional.isEmpty()) {
+            throw new ResourceNotFoundException("Modulo Nao Encontrado");
+        }
+
+        return ModuloMapper.toResponse(moduloOptional.get());
+    }
+
 }

@@ -7,5 +7,7 @@ public interface ModuloService {
 
     ModuloResponse cadastrarModulo(Long cursoId, ModuloRequest moduloRequest);
 
+    ModuloResponse buscarModuloPorId(Long id);
+
 
 }
