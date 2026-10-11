@@ -5,14 +5,21 @@ import jakarta.validation.ConstraintValidatorContext;
 
 public class MultiploDeCincoValidator implements ConstraintValidator<MultiploDeCinco, Integer> {
 
+    private int valor;
+
     @Override
-    public boolean isValid(Integer cargaHoraria, ConstraintValidatorContext constraintValidatorContext) {
+    public void initialize(MultiploDeCinco anotacao) {
+        if (anotacao.valor() <= 0) {
+            throw new IllegalArgumentException("O valor de @MultiploDeCinco deve ser maior que zero");
+        }
+        this.valor = anotacao.valor();
+    }
+
+    @Override
+    public boolean isValid(Integer cargaHoraria, ConstraintValidatorContext context) {
         if (cargaHoraria == null) {
             return true;
         }
-        if (cargaHoraria % 5 == 0) {
-            return true;
-        }
-        return false;
+        return cargaHoraria % valor == 0;
     }
 }

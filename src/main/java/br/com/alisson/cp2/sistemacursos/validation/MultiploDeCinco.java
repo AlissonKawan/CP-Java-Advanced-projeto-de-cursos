@@ -12,7 +12,8 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 @Constraint(validatedBy = MultiploDeCincoValidator.class)
 public @interface MultiploDeCinco {
-    String message() default "Aceito apenas valores multiplos de 5";
+    String message() default "Aceito apenas valores multiplos de {valor}";
+    int valor() default 5;
     Class<?>[] groups() default {};
     Class<? extends Payload>[] payload() default {};
 }
