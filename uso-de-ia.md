@@ -1,20 +1,20 @@
 # Registro de uso de IA generativa — CP2 Java Advanced
 
 **Projeto:** Sistema de Cursos  
-**Ferramenta:** ChatGPT (OpenAI)  
-**Arquivo exigido:** `uso-de-ia.md` na raiz do projeto  
-**Prazo previsto:** 12/10/2026 às 23h55
+**Ferramenta utilizada:** ChatGPT (OpenAI)  
+**Repositório do projeto:** [CP Java Advanced — Sistema de Cursos](https://github.com/AlissonKawan/CP-Java-Advanced-projeto-de-cursos)  
+**Histórico de commits:** [Acompanhar o desenvolvimento passo a passo no GitHub](https://github.com/AlissonKawan/CP-Java-Advanced-projeto-de-cursos/commits/master)  
+**Prazo de entrega:** 12/10/2026 às 23h55
 
-> [!WARNING]
-> **REGISTRO PARCIAL — NÃO ENTREGAR COMO SE FOSSE EXAUSTIVO.** O enunciado exige, sem exceções, **todos os prompts e todas as respostas na íntegra**, inclusive interações descartadas. Este documento foi montado com as mensagens desta conversa atualmente acessíveis, mas **não inclui automaticamente todas as conversas anteriores (05–10/10/2026, entre outras)** nem interações com outros serviços de IA. Diversas respostas longas abaixo estão marcadas como **reprodução parcial/adaptada**, portanto **NÃO** são transcrições literais completas. Os trechos de código dos prompts foram formatados para leitura, removendo artefatos de escape produzidos pela visualização do chat; imagens anexadas não estão reproduzidas em bytes. É indispensável substituir cada reprodução parcial pela resposta exata do histórico original e incorporar as conversas que faltam antes da entrega.
+## Uma observação para o professor
 
-## Estado do registro
+Professor, como utilizei vários chats durante o desenvolvimento da CP, ficou mais complicado reunir todos os prompts e todas as respostas em um único arquivo.
 
-- **Origem:** mensagens visíveis deste encadeamento de conversa, mais o PDF oficial para verificar o formato.
-- **Formato:** pares `## Prompt N` / `### Resposta`, separados por `---`.
-- **Observações de fidelidade:** os prompts com código foram reformatados como blocos Java ou texto para facilitar a leitura; as respostas identificadas como `parcial` tiveram partes visuais, quadros de checklist ou texto condensados. Por isso, o documento ainda precisa de confronto com o histórico original.
-- **Período anterior a estas mensagens:** há interações da mesma avaliação sobre criação do projeto, entidades JPA, validação, DTOs, Repositories, Mappers, Services, IA como tutor e dúvidas de Spring que não estão disponíveis integralmente nesta conversa. **Não foram inventadas respostas para preencher essas lacunas.**
-- **Revisão pendente:** exportar ou copiar o histórico do ChatGPT dos chats relevantes, localizar também eventuais conversas em Gemini/Copilot/outras IAs e transcrever cada interação original.
+Usei o ChatGPT principalmente como um tutor. Eu pedia que ele me passasse tarefas menores, tentava fazer cada uma no meu projeto e depois enviava meu código para ele revisar. Quando eu errava alguma coisa ou não entendia um conceito, perguntava o motivo, fazia ajustes e continuava para a próxima tarefa. Assim fui construindo as entidades, DTOs, repositories, services e controllers aos poucos.
+
+Também deixei o **[histórico completo de commits do repositório](https://github.com/AlissonKawan/CP-Java-Advanced-projeto-de-cursos/commits/master)** disponível para o senhor acompanhar como o código evoluiu passo a passo. Há commits mostrando a construção das funcionalidades e correções de erros durante o processo, inclusive um commit chamado `corrigindo erro de NotBlank`. O histórico ajuda a mostrar meu processo de desenvolvimento, mas sei que os commits não guardam todas as perguntas e respostas que troquei com a IA.
+
+**Sobre o registro abaixo:** organizei as interações que consegui reunir. Algumas respostas estão reproduzidas parcialmente ou com adaptações de formatação, e ainda existem conversas anteriores que não consegui transcrever por completo. Portanto, este arquivo não representa um registro integral de tudo que foi conversado com a IA.
 
 ---
 
@@ -3293,16 +3293,10 @@ Beleza agora quero o arquivo .md bonito da forma como pede a CP de todos os prom
 
 ---
 
-## Lacunas que ainda precisam ser preenchidas antes da entrega
+## Observações finais
 
-**Não há certificação de completude.** Interações mais antigas sobre a CP2 ocorreram em outros chats e não foram integralmente recuperadas aqui. Além disso, algumas respostas acima são versões parciais: substituí-las por cópia integral do chat original é obrigatório para aderir ao enunciado. Se houve uso de outras IAs, suas respostas também precisam entrar neste arquivo.
+Registrei acima os prompts e as respostas que consegui reunir. Em alguns pontos, o conteúdo está identificado como reprodução parcial ou adaptada porque não consegui recuperar a resposta original inteira no momento da organização. Também utilizei mais de um chat durante a CP, e parte dessas conversas ainda não foi incluída aqui.
 
-### Procedimento de conferência
+O [histórico de commits do projeto](https://github.com/AlissonKawan/CP-Java-Advanced-projeto-de-cursos/commits/master) permite acompanhar a evolução do código, inclusive erros corrigidos, mas não contém por si só o histórico completo das conversas com o ChatGPT.
 
-1. Abra o histórico completo das conversas desta avaliação. Para cada mensagem do aluno destinada à IA, copie integralmente o prompt (incluindo código e anexos relevantes); em seguida, copie a resposta integral, sem resumir.
-2. Substitua todos os blocos sinalizados como "reprodução parcial/adaptada" pela resposta literal completa.
-3. Inclua todas as conversas anteriores e posteriores à geração desta versão, mantendo sequência. Em caso de mensagens com imagens, registre o anexo adequadamente.
-4. Elimine este aviso apenas quando a conferência integral estiver concluída e os pares estiverem completos; não afirme falsamente que a documentação está completa.
-5. Salve este arquivo na raiz do projeto, junto ao `pom.xml`, antes de criar o ZIP de entrega.
-
-**Base:** CP2 - Java Advanced, seção "Uso de IA generativa" (páginas 1–3) e "Entrega" (página 10).
+Sei que o enunciado solicita todos os prompts e respostas na íntegra. As partes que ainda faltam precisam ser acrescentadas para que esse requisito seja atendido.
