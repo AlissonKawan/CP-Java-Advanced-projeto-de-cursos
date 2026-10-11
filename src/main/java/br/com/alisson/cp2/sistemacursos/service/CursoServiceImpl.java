@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class CursoServiceImpl implements CursoService {
 
-    CursoRepository repository;
+    private final CursoRepository repository;
     public CursoServiceImpl(CursoRepository repository) {
         this.repository = repository;
     }

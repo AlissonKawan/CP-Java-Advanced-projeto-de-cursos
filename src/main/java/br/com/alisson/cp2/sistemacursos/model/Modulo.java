@@ -25,7 +25,7 @@ public class Modulo {
     private Curso curso;
 
     @NotBlank(message = "O campo é obrigatório")
-    @Size(min = 150, message = "Deve conter no minimo 150 caracteres")
+    @Size(max = 150, message = "Deve conter no máximo 150 caracteres")
     private String titulo;
 
     @NotNull
