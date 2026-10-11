@@ -63,4 +63,29 @@ public class CursoServiceImpl implements CursoService {
         );
 
     }
+
+    @Override
+    public CursoResponse atualizarCurso(Long id, CursoRequest request) {
+        Optional<Curso> cursoEncontrado = repository.findById(id);
+        if (cursoEncontrado.isPresent()) {
+            Curso curso = cursoEncontrado.get();
+            curso.setTitulo(request.titulo());
+            curso.setDescricao(request.descricao());
+            Curso cursoSalvo = repository.save(curso);
+            return CursoMapper.toResponse(cursoSalvo);
+        }
+        else {
+            throw new ResourceNotFoundException("Não encontrado!");
+        }
+    }
+
+    @Override
+    public void excluirCurso(Long id) {
+        if (repository.existsById(id)) {
+            repository.deleteById(id);
+        }
+        else {
+            throw new ResourceNotFoundException("Não encontrado!");
+        }
+    }
 }

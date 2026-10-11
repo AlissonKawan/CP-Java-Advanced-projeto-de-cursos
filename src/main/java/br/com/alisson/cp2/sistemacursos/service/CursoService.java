@@ -14,4 +14,8 @@ public interface CursoService {
     CursoResponse buscarCursoPorId(Long id);
 
     PageResponse<CursoResponse> listarCursos(Pageable pageable);
+
+    CursoResponse atualizarCurso(Long id, CursoRequest request);
+
+    void excluirCurso(Long id);
 }
